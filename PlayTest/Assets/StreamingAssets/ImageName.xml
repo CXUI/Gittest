@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+
+  <Record id="0" name="0.png" describe="图片0" path="/Image/"/> 
+  <Record id="1" name="1.png" describe="图片1" path="/Image/"/>
+  <Record id="2" name="2.png" describe="图片2" path="/Image/"/>
+  <Record id="3" name="3.png" describe="图片3" path="/Image/"/>
+  <Record id="4" name="4.png" describe="图片4" path="/Image/"/>
+  <Record id="5" name="5.png" describe="图片5" path="/Image/"/>
+  <Record id="6" name="6.png" describe="图片6" path="/Image/"/>
+  <Record id="7" name="7.png" describe="图片7" path="/Image/"/>
+</RECORDS>

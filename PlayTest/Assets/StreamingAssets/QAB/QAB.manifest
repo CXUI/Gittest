@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2824968060
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: cube.unity3d
+      Dependencies: {}
