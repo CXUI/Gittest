@@ -34,16 +34,18 @@ public class GamePool
     /// <returns></returns>
     public virtual GameObject DequeuePool()
     {
-        FindQueueCound();
+       // FindQueueCound();
         return queueObject.Dequeue(); 
 
     }
 
-    public void FindQueueCound() 
+    public  void FindQueueCound(string name) 
     {
-        Debug.Log("队列的长度："+queueObject.Count);
+        Debug.Log(name+"队列的长度："+queueObject.Count);
 
     }
+
+
 
 
     public void CreateOb() 

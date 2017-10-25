@@ -12,6 +12,7 @@ class TestPool:MonoBehaviour
 
     ObjectBirdPool bird = new ObjectBirdPool();
 
+    GamePool pool = new GamePool();
 
 
     void FixedUpdate() 
@@ -36,6 +37,12 @@ class TestPool:MonoBehaviour
 
         }
 
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+
+            //triger.FindQueueCound();
+
+        }
 
 
 
@@ -86,7 +93,6 @@ class TestPool:MonoBehaviour
         GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Cube);
         deer.EnqueuePool(obj);
     }
-
 
 }
 

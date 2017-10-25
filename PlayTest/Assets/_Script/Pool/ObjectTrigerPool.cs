@@ -29,16 +29,6 @@ public class ObjectBirdPool : GamePool
     {
         base.EnqueuePool(obj);
     }
-
-
-    //public void CretaeGame()
-    //{
-    //    for (int i = 0; i < 10;i++ )
-    //    {
-    //        GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Capsule);
-    //        EnqueuePool(obj);
-    //    }
-    //}
 }
 
 
