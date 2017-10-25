@@ -105,6 +105,7 @@ using System.Linq;
                sprites.GetComponent<Image>().sprite = Sprite.Create(tex, new Rect(0, 0, tex.height, tex.width), Vector2.zero);
 
                sprites.gameObject.AddComponent<MouseClieckEvent>();
+               
             }
             else
             {
