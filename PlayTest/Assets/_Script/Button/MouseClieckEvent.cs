@@ -35,16 +35,27 @@ public class MouseClieckEvent : MonoBehaviour, IPointerClickHandler, IPointerDow
     /// <param name="eventData"></param>
     public void OnPointerUp(PointerEventData eventData)
     {
-        Debug.Log("鼠标松开（Anyplace）");
+       // Debug.Log("鼠标松开（Anyplace）");
 
 
-        transform.parent = tempParent;
+        transform.SetParent(tempParent, true);
+            //= tempParent;
         transform.localPosition = Vector3.zero;
-
+ 
 
         transform.GetComponent<CanvasGroup>().blocksRaycasts = true;
+ 
+        foreach(var temp in GameInitialization.GetImageName)
+        {
+        
+            if(temp.Value==eventData.pointerPressRaycast.gameObject.name)
+            {
 
-        CameraRay();
+                CameraRay(temp.Key);
+
+            }
+
+        }
     }
 
     /// <summary>
@@ -53,7 +64,7 @@ public class MouseClieckEvent : MonoBehaviour, IPointerClickHandler, IPointerDow
     /// <param name="eventData"></param>
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("鼠标松开（在Image）");
+        //Debug.Log("鼠标松开（在Image）");
     }
 
     /// <summary>
@@ -62,12 +73,13 @@ public class MouseClieckEvent : MonoBehaviour, IPointerClickHandler, IPointerDow
     /// <param name="eventData"></param>
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("鼠标点击");
+        //Debug.Log("鼠标点击");
 
 
         tempParent = transform.parent;
 
-        transform.parent = images;
+        transform.SetParent(images,true);
+        //= images;
 
         transform.GetComponent<CanvasGroup>().blocksRaycasts = false;
 
@@ -80,7 +92,7 @@ public class MouseClieckEvent : MonoBehaviour, IPointerClickHandler, IPointerDow
     /// <param name="eventData"></param>
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("鼠标离开");
+       // Debug.Log("鼠标离开");
         name.text = string.Empty;
         //name.transform.parent = null;   
     }
@@ -91,15 +103,17 @@ public class MouseClieckEvent : MonoBehaviour, IPointerClickHandler, IPointerDow
     /// <param name="eventData"></param>
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("鼠标悬浮");
+        //Debug.Log("鼠标悬浮");
 
-        QueueSaveInfortation.Instance().QueueElementCount();
+       // QueueSaveInfortation.Instance().QueueElementCount();
 
+        if (name.transform.parent != eventData.pointerCurrentRaycast.gameObject.transform)
+        {
 
-
-        name.transform.parent = eventData.pointerCurrentRaycast.gameObject.transform;
-        name.transform.localPosition = new Vector3(0, -40, 0);
-        name.text = eventData.pointerCurrentRaycast.gameObject.name;
+            name.transform.SetParent(eventData.pointerCurrentRaycast.gameObject.transform, true);
+            name.transform.localPosition = new Vector3(0, -40, 0);
+            name.text = eventData.pointerCurrentRaycast.gameObject.name;
+        }
 
     }
 
@@ -118,7 +132,7 @@ public class MouseClieckEvent : MonoBehaviour, IPointerClickHandler, IPointerDow
     /// <summary>
     /// 摄像机发射射线
     /// </summary>
-    public Transform CameraRay()
+    public Transform CameraRay(string keys)
     {
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -127,7 +141,8 @@ public class MouseClieckEvent : MonoBehaviour, IPointerClickHandler, IPointerDow
         {
             Debug.DrawLine(ray.origin, hit.point, Color.red);
 
-            CreateGameObject(hit.point);
+            CreateGameObject(hit.point,keys);
+
             return hit.transform;
         }
         return null;
@@ -138,12 +153,34 @@ public class MouseClieckEvent : MonoBehaviour, IPointerClickHandler, IPointerDow
     /// 生成物体
     /// </summary>
     /// <param name="points"></param>
-    public void CreateGameObject(Vector3 points)
+    public void CreateGameObject(Vector3 points,string keys)
     {
-        GameObject trig = Instantiate(Resources.Load("Trger/BlackTiger", typeof(GameObject)), points, Quaternion.identity) as GameObject;
+       //  GameObject trig = Instantiate(Resources.Load("Trger/BlackTiger", typeof(GameObject)), points, Quaternion.identity) as GameObject;
+
+        GetObject(points,int.Parse(keys));
+   
         CreateImage();
     }
 
+
+    public void GetObject(Vector3 points,int number) 
+    {
+      //  Debug.Log(number);
+        if(number>=3)
+        {
+            number = 2;
+        }
+
+      
+
+        GameObject trig = Pool.instance.listPool[number].DequeuePool();
+
+        trig.transform.position = points;
+
+        Pool.instance.listPool[number].EnqueuePool(trig);
+
+        
+    }
 
     /// <summary>
     /// 生成以及存放到栈中的物体
@@ -161,8 +198,8 @@ public class MouseClieckEvent : MonoBehaviour, IPointerClickHandler, IPointerDow
         if(oldIma.transform.childCount==0)
         {
             GameObject te = Instantiate(name.gameObject)as GameObject;
-            te.transform.parent = oldIma.transform;
-            te.name = "Text";
+            te.transform.SetParent(oldIma.transform,true)  ;
+            te.name = "Text";       
         }
 
         //更改子物体的大小，位置

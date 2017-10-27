@@ -53,8 +53,8 @@ class CreateGameobjectPool
         switch(objectType)
         {
             case "Triger": pool = new ObjectTrigerPool(); break;
-            case "Deer": pool = new ObjectDeerPool(); break;
-            case "Bird": pool = new ObjectBirdPool(); break;
+            case "Deer":   pool = new ObjectDeerPool(); break;
+            case "Bird":   pool = new ObjectBirdPool(); break;
            // default: pool = null; break;
 
         }

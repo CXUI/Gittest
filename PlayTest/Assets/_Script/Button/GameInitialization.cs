@@ -31,27 +31,10 @@ using System.Linq;
           
 
             GetDictionarySaveInfortation();
+            //Pool.instance
 
         }
-
  
-
-        /// <summary>
-        /// 检测子物体
-        /// </summary>
-        public void TestingImageArrayChild()
-        {
-            for (int i = 0; i < imageArray.Length;i++ )
-            {
-                if(imageArray[i].transform.childCount==0)
-                {
-                    
-                }
-
-            }
-
-        }
-
         /// <summary>
         /// 得到字典保存的信息
         /// </summary>

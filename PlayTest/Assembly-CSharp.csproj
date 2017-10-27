@@ -1,12 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{F2761668-6A01-0B7C-45F7-5AAF1D53A9EC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -46,120 +45,118 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Malbers Animations\Animals Packs\01 Forest Pack\Tiger\Scene\GizmosDraw.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Behaviors\ActivateConstraintsBehaviors.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Behaviors\DamagedBehavior.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Behaviors\FallBehavior.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Behaviors\JumpBehavior.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Behaviors\NoCollidersBehavior.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Behaviors\RandomBehavior.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Behaviors\RecoverBehavior.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Behaviors\SleepBehavior.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Behaviors\SoundBehavior.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Behaviors\StateBehavior.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Behaviors\StayStillBehavior.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Actions\ActionPack.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Actions\ActionZone.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Actions\Actions.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\Animal.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\AnimalAIControl.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\AnimalCallBacks.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\AnimalMovement.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\AnimalVariables.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\HashIDsAnimal.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\AbstractTargetFollower.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\ChangeTarget.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\Compatible SA\Water\Scripts\Water.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\EnterWater.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\FreeLookCam.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\MakeDamage.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\MalbersInput.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\PivotBasedCameraRig.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\Pivots.cs" />
-    <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\TransformGrandChildExtension.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scenes\Tests\DistanceFogStatic\DistanceFogStatic.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\CameraOverlay.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\CubeMover.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\CustomLightingManager.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\DirectionalLightManager.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\DisableRendererOnMouseDown.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\DistanceLight.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\EditModeGridSnap.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\EnableCameraDepthTexture.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\Fps.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\FrameRate.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\MarvelousBloom.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\MeshTools\OceanCreator.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\ObjectRotator.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\OceanWaver.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\ScreenTextureBlend.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\SimpleRotator.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\Splasher.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\UVHeightGenerator.cs" />
-    <Compile Include="Assets\MarvelousTechniques\Scripts\UVLayoutGenerator.cs" />
-    <Compile Include="Assets\_Script\AB\QFramework.cs" />
-    <Compile Include="Assets\_Script\Button\AddEventListent.cs" />
-    <Compile Include="Assets\_Script\Button\GameInitialization.cs" />
-    <Compile Include="Assets\_Script\Button\MouseClieckEvent.cs" />
-    <Compile Include="Assets\_Script\Button\QueueEventArgs.cs" />
-    <Compile Include="Assets\_Script\Button\QueueSaveInfortation.cs" />
-    <Compile Include="Assets\_Script\Button\ReandingXML.cs" />
-    <Compile Include="Assets\_Script\Pool\CreateGameobjectPool.cs" />
-    <Compile Include="Assets\_Script\Pool\GamePool.cs" />
-    <Compile Include="Assets\_Script\Pool\ObjectTrigerPool.cs" />
-    <Compile Include="Assets\_Script\Pool\Pool.cs" />
-    <Compile Include="Assets\_Script\Pool\TestPool.cs" />
-    <None Include="Assets\MarvelousTechniques\Shaders\DefaultTexture.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleDistanceLightRS.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\FloatingLeaf.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\OceanDepth.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\Vignette.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingMaster.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\OneColor.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\Flower.shader" />
-    <None Include="Assets\_Script\213.txt" />
-    <None Include="Assets\MarvelousTechniques\Shaders\Marvelous.cginc" />
-    <None Include="Assets\MarvelousTechniques\Shaders\Transparent2.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\ImageEffects\Bloom.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CameraOverlay.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\TextureAnimationTransparent.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBGPixel3Color.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleRS.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleDistanceLight.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleSoftFog.shader" />
-    <None Include="Assets\StreamingAssets\ImageName.xml" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingRS.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingHardFog.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\Transparent.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\WaterPool.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimple.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLighting.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBG.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSoftFogAlpha.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\OceanOpaque.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\TransparentAdditiveFG.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\TextureBG.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\WaterBox.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\FlagWave.shader" />
-    <None Include="Assets\Malbers Animations\Common\Scripts\Utility\Compatible SA\Water\Shaders\FXWaterPro.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\Waterfall.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSoftFog.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\ImageEffects\ScreenTextureBlend.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingDistanceLight.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBGPixel.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientImageBG.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\TransparentAdditive.shader" />
-    <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleSoftFogRS.shader" />
-    <None Include="Assets\_Script\Pool\GamePool.cs.meta" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>D:/UntiyForBest/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>D:/UntiyForBest/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>D:/UntiyForBest/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-    </Reference>
+     <Compile Include="Assets\Malbers Animations\Animals Packs\01 Forest Pack\Tiger\Scene\GizmosDraw.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Behaviors\ActivateConstraintsBehaviors.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Behaviors\DamagedBehavior.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Behaviors\FallBehavior.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Behaviors\JumpBehavior.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Behaviors\NoCollidersBehavior.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Behaviors\RandomBehavior.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Behaviors\RecoverBehavior.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Behaviors\SleepBehavior.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Behaviors\SoundBehavior.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Behaviors\StateBehavior.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Behaviors\StayStillBehavior.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Actions\ActionPack.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Actions\ActionZone.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Actions\Actions.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\Animal.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\AnimalAIControl.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\AnimalCallBacks.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\AnimalMovement.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\AnimalVariables.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\HashIDsAnimal.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\AbstractTargetFollower.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\ChangeTarget.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\Compatible SA\Water\Scripts\Water.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\EnterWater.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\FreeLookCam.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\MakeDamage.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\MalbersInput.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\PivotBasedCameraRig.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\Pivots.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Utility\TransformGrandChildExtension.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scenes\Tests\DistanceFogStatic\DistanceFogStatic.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\CameraOverlay.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\CubeMover.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\CustomLightingManager.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\DirectionalLightManager.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\DisableRendererOnMouseDown.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\DistanceLight.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\EditModeGridSnap.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\EnableCameraDepthTexture.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\Fps.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\FrameRate.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\MarvelousBloom.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\MeshTools\OceanCreator.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\ObjectRotator.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\OceanWaver.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\ScreenTextureBlend.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\SimpleRotator.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\Splasher.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\UVHeightGenerator.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\UVLayoutGenerator.cs" />
+     <Compile Include="Assets\_Script\AB\QFramework.cs" />
+     <Compile Include="Assets\_Script\Button\AddEventListent.cs" />
+     <Compile Include="Assets\_Script\Button\GameInitialization.cs" />
+     <Compile Include="Assets\_Script\Button\MouseClieckEvent.cs" />
+     <Compile Include="Assets\_Script\Button\QueueEventArgs.cs" />
+     <Compile Include="Assets\_Script\Button\QueueSaveInfortation.cs" />
+     <Compile Include="Assets\_Script\Button\ReandingXML.cs" />
+     <Compile Include="Assets\_Script\Pool\CreateGameobjectPool.cs" />
+     <Compile Include="Assets\_Script\Pool\GamePool.cs" />
+     <Compile Include="Assets\_Script\Pool\ObjectTrigerPool.cs" />
+     <Compile Include="Assets\_Script\Pool\Pool.cs" />
+     <Compile Include="Assets\_Script\Pool\TestPool.cs" />
+     <None Include="Assets\MarvelousTechniques\Shaders\DefaultTexture.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleDistanceLightRS.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\FloatingLeaf.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\OceanDepth.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Vignette.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingMaster.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\OneColor.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Flower.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Marvelous.cginc" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Transparent2.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\ImageEffects\Bloom.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CameraOverlay.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\TextureAnimationTransparent.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBGPixel3Color.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleRS.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleDistanceLight.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleSoftFog.shader" />
+     <None Include="Assets\StreamingAssets\ImageName.xml" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingRS.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingHardFog.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Transparent.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\WaterPool.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimple.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLighting.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBG.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSoftFogAlpha.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\OceanOpaque.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\TransparentAdditiveFG.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\TextureBG.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\WaterBox.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\FlagWave.shader" />
+     <None Include="Assets\Malbers Animations\Common\Scripts\Utility\Compatible SA\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Waterfall.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSoftFog.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\ImageEffects\ScreenTextureBlend.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingDistanceLight.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBGPixel.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientImageBG.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\TransparentAdditive.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleSoftFogRS.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/UntiyForBest/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/UntiyForBest/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>D:/UntiyForBest/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -169,4 +166,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>
